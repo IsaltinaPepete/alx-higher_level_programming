@@ -11,7 +11,7 @@ if __name__ == "__main__":
     num1 = int(sys.argv[1])
     num2 = int(sys.argv[3])
     if sys.argv[2] == '+':
-        print("{} + {} = {}".format(num1, num2, add(num1, num)))
+        print("{} + {} = {}".format(num1, num2, add(num1, num2)))
     elif sys.argv[2] == '-':
         print("{} - {} = {}".format(num1, num2, sub(num1, num2)))
     elif sys.argv[2] == '*':

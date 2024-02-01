@@ -4,7 +4,8 @@
 
 class Rectangle:
     """Define a rectangle class"""
-    def __init__(self, width=0, height=0):
+
+   def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
 
         Args:
@@ -16,9 +17,9 @@ class Rectangle:
 
     @property
     def width(self):
-        """Get width"""
+        """Get/set width"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -29,7 +30,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get Height"""
+        """Get/set height"""
         return self.__height
 
     @height.setter

@@ -6,7 +6,9 @@ def append_write(filename="", text=""):
     Args:
         filename(string)- name of file
         text(string) - the text
+    Returns:
+        The number of characters appended.
     """
-    with(filename, "a+", encoding="utf-8") as f:
+    with open(filename, "a+", encoding="utf-8") as f:
         f.seek(0, 2)
         return f.write(text)

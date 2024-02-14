@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """define a method"""
+import json
 
 
 def to_json_string(my_obj):
@@ -8,8 +9,8 @@ def to_json_string(my_obj):
     Args:
     my_obj: the object .
 
-    Return:
-    str: s string.
+    Retorna:
+    str: A representação JSON do objeto como uma strin
     """
     json_string = json.dumps(my_obj)
     return json_string

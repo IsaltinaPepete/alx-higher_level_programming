@@ -76,7 +76,6 @@ class Rectangle(Base):
             return
         for h in range(self.y):
             print("")
-
         for i in range(self.height):
             for w in range(self.x):
                 print(" ", end="")
@@ -89,4 +88,3 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                                                        self.x, self.y,
                                                        self.width, self.height)
-
